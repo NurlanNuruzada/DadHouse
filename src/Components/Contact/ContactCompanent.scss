@@ -1,0 +1,175 @@
+.ContactCompanent_main {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>div {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width: 1150px;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .ContactCompanent_contactInfo {
+            max-width: 50%;
+            height: auto;
+
+            &>h1 {
+                color: black;
+                font-weight: 300;
+                font-size: 30px;
+            }
+
+            &>p {
+                color: #250e0e;
+                font-weight: 300;
+                margin-top: 20px;
+            }
+
+            &>div {
+                margin-top: 28px;
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    margin-top: 28px;
+
+                    &>div {
+
+                        &>p {
+                            color: #a09e9e;
+                            font-weight: 300;
+                            margin-left: 12px;
+                        }
+
+                        &>h1 {
+                            color: #aa8453;
+                            font-weight: 400;
+                            margin-left: 12px;
+                            font-size: 27px;
+                        }
+
+                        &>svg {
+                            font-size: 40px;
+                            color: #aa8453;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ContactCompanent_form {
+            max-width: 50% !important;
+            height: auto;
+            // background-color: rgb(118, 140, 159);
+
+            &>h1 {
+                color: black;
+                font-weight: 400;
+                font-size: 30px;
+                margin-left: 25px;
+            }
+
+            &>div {
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+
+            .ContactCompanent_form_text {
+                margin-top: 10px;
+                margin-left: 25px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                height: 100px;
+                text-decoration: dashed;
+                text-decoration-color: #aa8453;
+                display: block;
+                width: 480px !important;
+            }
+
+            button {
+                --color: #aa8453;
+                font-family: inherit;
+                display: inline-block;
+                width: 8em;
+                height: 2.6em;
+                line-height: 2.5em;
+                margin: 20px;
+                position: relative;
+                overflow: hidden;
+                border: 2px solid var(--color);
+                transition: color .5s;
+                z-index: 1;
+                font-size: 17px;
+                border-radius: 1px;
+                font-weight: 500;
+                color: var(--color);
+                margin-left: 25px;
+            }
+
+            button:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                background: var(--color);
+                height: 150px;
+                width: 200px;
+                border-radius: 50%;
+            }
+
+            button:hover {
+                color: #fff;
+            }
+
+            button:before {
+                top: 100%;
+                left: 100%;
+                transition: all .7s;
+            }
+
+            button:hover:before {
+                top: -30px;
+                left: -30px;
+            }
+
+            button:active:before {
+                background: #aa8453;
+                transition: background 0s;
+            }
+
+        }
+    }
+}
+
+
+@media(max-width: 576px) {
+    #responsiveUcun {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ContactCompanent_form{
+        margin-top: 40px;
+    }
+
+    #responsiveUcun2{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .ContactCompanent_form_text{
+        max-width: 160px;
+    }
+}

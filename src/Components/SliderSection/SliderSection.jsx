@@ -3,9 +3,9 @@ import Styles from './SliderSection.module.css'
 import PhoneIcon from '../../Images/phone-call.png'
 import SynchronizedSlider from '../../Components/CaruselSliderSlick/caruselSlider';
 
-export default function SliderSection() {
+export default function SliderSection({height}) {
     return (
-        <div className={Styles.Section3Container}>
+        <div style={{height:height}} className={Styles.Section3Container}>
             <div className={Styles.LeftSideContainer}>
                 <span className={Styles.Section3Title1}>Best Prices</span>
                 <br />

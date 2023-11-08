@@ -5,6 +5,7 @@ import ParalaxEffect from '../../Components/ParalaxEffetImage/ParalaxEffect';
 import AboutUsSection from '../../Components/AboutUsSection/AboutUsSection';
 import SliderSection from '../../Components/SliderSection/SliderSection';
 import PolicySection from '../../Components/Policy/PolicySection';
+import HotelFacilities from "../../Components/HotelFacilities/HotelFacilities";
 
 export default function About() {
     const { scrollRef } = useSnapCarousel();
@@ -17,7 +18,7 @@ export default function About() {
                 <AboutUsSection />
                 {/* section 3 */}
                 <SliderSection />
-                <PolicySection />
+                <HotelFacilities />
             </div>
         </>
     );

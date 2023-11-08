@@ -1,0 +1,31 @@
+.Facilities_Card {
+    max-width: 360px;
+    min-height: 230px;
+    border: 1px solid rgb(220, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>div{
+        width: 90%;
+        height: auto;
+
+        .Facilities_logo{
+
+            &>svg{
+                font-size: 40px;
+                color: #aa8453;
+            }
+        }
+
+        &>h1{
+            color: black;
+            font-weight: 300;
+        }
+
+        &>p{
+            margin-top: 12px;
+            color: rgb(104, 102, 102);
+        }
+    }
+}

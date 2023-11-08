@@ -1,0 +1,38 @@
+.Contact_main{
+    width: 100%;
+    height: 600px;
+    background-color: antiquewhite;
+}
+
+.Hotel_Location{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .Hotel_Location_desk{
+        max-width: 1150px;
+        height: auto;
+    }
+
+    .responsive_Phone_Location{
+        max-width: 1150px;
+        height: auto;
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 576px) {
+    .Hotel_Location_desk{
+        display: none;
+
+    }
+    .responsive_Phone_Location{
+        display: block !important;
+    }
+}

@@ -1,0 +1,92 @@
+.HotelRooms_main {
+    background-color: #f8f5f0;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>div {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        width: 1150px;
+        height: 100%;
+        background-color: #f8f5f0;
+        display: grid;
+        grid-template-columns: auto;
+
+        &>h3 {
+            color: rgb(104, 102, 102);
+            font-weight: 300;
+            word-spacing: 9px;
+        }
+
+        &>h1 {
+            color: black;
+            font-weight: 300;
+            font-size: 46px;
+            margin-top: 5px;
+        }
+
+        &>div {
+            margin-top: 40px;
+
+            .HotelRooms_Card {
+                width: 100%;
+                height: 700px;
+                border-radius: 4px;
+                background: #aa8453;
+                display: flex;
+                gap: 5px;
+                padding: .4em;
+            }
+
+            .HotelRooms_Card p {
+                height: 100%;
+                flex: 1;
+                overflow: hidden;
+                cursor: pointer;
+                border-radius: 2px;
+                transition: all .5s;
+                background: #212121;
+                border: 1px solid #f8f5f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px !important;
+                margin-top: 0px !important;
+            }
+
+            .HotelRooms_Card p:hover {
+                flex: 5;
+            }
+
+            .HotelRooms_Card p span {
+                // min-width: 14em;
+                width: 100%;
+                height: 100%;
+                padding: .5em;
+                text-align: center;
+                transform: rotate(-90deg);
+                transition: all .5s;
+                text-transform: uppercase;
+                color: #f8f5f0;
+                letter-spacing: .1em;
+            }
+
+            .HotelRooms_Card p:hover span {
+                transform: rotate(0);
+            }
+            .HotelRooms_Card p:hover span img {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+#HotelRooms_image{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -160px;
+}

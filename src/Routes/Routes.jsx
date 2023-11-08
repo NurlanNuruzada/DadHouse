@@ -4,6 +4,9 @@ import { useRoutes } from 'react-router-dom'
 import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
+import Restaurant from "../Pages/Restaurant/Restaurant";
+import RoomSutuies from "../Pages/RoomSutuies/RoomSutuies";
+
 
 export default function Routes() {
     let routes = [
@@ -25,6 +28,14 @@ export default function Routes() {
                 {
                     path: "/Contact",
                     element:  <Contact />
+                },
+                {
+                    path: "/Restaurant",
+                    element:  <Restaurant />
+                },
+                {
+                    path: "/RoomSutuies",
+                    element:  <RoomSutuies />
                 }
             ]
         }
