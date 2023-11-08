@@ -6,6 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import theCappalogo from "./dadHouse-removebg-preview.png";
 import AOS from 'aos'
 import "aos/dist/aos.css";
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
 
@@ -33,12 +34,15 @@ export default function Header() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setNavbarBackground('white'); // Scroll yapılırken arkaplan beyaz olacak
+      setNavbarBackground('white'); 
     } else {
       setScrolling(false);
-      setNavbarBackground('transparent'); // Scroll durduğunda arkaplan şeffaf olacak
+      setNavbarBackground('transparent'); 
     }
   };
+
+
+  const [t, i18n] = useTranslation("global");
 
 
   return (
@@ -47,11 +51,11 @@ export default function Header() {
         <div className={Styles.navbar}>
           <div className={Styles.navbar_logo}><Link id={Styles.LinkEdit} className={Styles.navbar_logo_Img}><img src={theCappalogo} /></Link></div>
           <ul className={Styles.navbar_links}>
-            <li ><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>HOME</Link></li>
-            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>ABOUT</Link></li>
-            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>ROOMS & SUITES</Link></li>
-            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>RESTAURANT</Link></li>
-            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>CONTACT</Link></li>
+            <li ><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>{t("header.home")}</Link></li>
+            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>{t("header.about")}</Link></li>
+            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>{t("header.roomssuites")}</Link></li>
+            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>{t("header.restuarant")}</Link></li>
+            <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>{t("header.contact")}</Link></li>
           </ul>
           <div onClick={() => setdropDownOpen(!dropDownOpen)} className={Styles.toggle_btn}>
             {dropDownOpen ? <AiOutlineClose style={scrolling ? { color: "black" } : { color: "white" }} />

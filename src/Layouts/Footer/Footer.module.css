@@ -126,20 +126,21 @@ li {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdowncontent a {
+.dropdowncontent button {
     color: #aa8453;
     padding: 8px 10px;
     text-decoration: none;
     display: block;
     transition: 0.1s;
+    width: 100%;
 }
 
-.dropdowncontent a:hover {
+.dropdowncontent button:hover {
     background-color: #aa8453;
     color: #212121;
 }
 
-.dropdowncontent a:focus {
+.dropdowncontent button:focus {
     background-color: #212121;
     color: #aa8453;
 }

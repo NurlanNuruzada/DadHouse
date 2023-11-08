@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom'
 import { BsFillTelephoneOutboundFill, BsInstagram } from "react-icons/bs";
 import { AiOutlineTwitter, AiOutlineYoutube } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
+
 
 export default function Footer() {
+
+  const [t, i18n] = useTranslation("global");
+  const handleChangeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang)
+  }
+
   return (
     <>
       <div className={Styles.Footer_main}>
@@ -20,9 +28,9 @@ export default function Footer() {
             <div className={Styles.pastebutton}>
               <button className={Styles.button}>Language &nbsp; ▼</button>
               <div className={Styles.dropdowncontent}>
-                <a id={Styles.top} href="#">English</a>
-                <a id={Styles.middle} href="#">Azerbayjan</a>
-                <a id={Styles.bottom} href="#">Turksih</a>
+                <button id={Styles.middle} onClick={() => handleChangeLanguage("az")} href="#">Azerbayjan</button>
+                <button id={Styles.top} onClick={() => handleChangeLanguage("en")} href="#">English</button>
+                <button id={Styles.bottom} onClick={() => handleChangeLanguage("ru")} href="#">Russian</button>
               </div>
             </div>
 

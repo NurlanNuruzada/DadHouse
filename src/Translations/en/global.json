@@ -1,0 +1,9 @@
+{
+    "header":{
+        "home": "HOME",
+        "about": "ABOUT",
+        "roomssuites": "ROOMS & SUITES",
+        "restuarant": "RESTAURANT",
+        "contact": "CONTACT"
+    }
+}
