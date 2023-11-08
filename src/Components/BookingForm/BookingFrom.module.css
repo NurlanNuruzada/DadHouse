@@ -1,0 +1,129 @@
+.MainContainer {
+    background: #f8f5f0;
+    width: max-content;
+    height: max-content;
+    padding: 35px 55px;
+    min-width: 420px;
+    max-width: 550px;
+}
+
+.title1 {
+
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    color: #666;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+
+}
+
+.title2 {
+    font-family: 'Gilda Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #222;
+    border-bottom: 1px solid rgba(170, 132, 83, 0.2);
+    padding-bottom: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.DateInputContainer {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.CalendarIcon {
+    background-color: white;
+    padding: 15px;
+    color: #aa8453;
+}
+
+.MainInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px !important;
+    color: #222 !important;
+    padding-bottom: 20px;
+}
+
+.Button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    background: #aa8453;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 62px;
+    transform: scaleY(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+}
+.Button:hover{
+    background-color: #222;
+}
+.SelectOptions {
+    width: 100% !important;
+    border: 1px solid white !important;
+    outline: none !important;
+    background-color: white !important;
+    border-radius: 0 !important;
+    height: 60px !important;
+    font-size: 15px !important;
+    color: #222 !important;
+}
+
+.SelectOptionsContainer {
+    display: flex;
+    gap: 20px;
+
+}
+
+.DateInput {
+
+    display: block;
+    max-width: 100%;
+    font-size: 15px;
+    border: 1px solid white !important;
+    color: #222;
+    background-color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    height: 60px !important;
+}
+@media (max-width: 870px) {
+    .MainContainer {
+        min-width: 530px;
+    }
+    .SelectOptionsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 587px) {
+    .MainContainer {
+        min-width: 450px;
+    }
+}
+@media (max-width: 482px) {
+    .MainContainer {
+        min-width: 350px;
+    }
+}

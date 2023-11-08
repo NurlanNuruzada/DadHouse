@@ -1,0 +1,160 @@
+
+.SeccondTitle {
+    font-size: 43px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: #222;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+
+.firstTitle {
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.Description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.PhoneNumberText {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+
+.PhoneNumber {
+    font-family: 'Barlow', sans-serif;
+    font-size: 23px;
+    color: #8e6d45;
+    letter-spacing: -1px;
+    margin: 5px 0;
+    word-spacing: -2px;
+}
+
+
+.PhoneIcon {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.Section2Container {
+    margin: 70px 0 150px;
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Section2Left {
+    max-width: 36%;
+    padding: 100px 10px 0 0;
+}
+
+.Section2Right {
+    max-width: 55%;
+    white-space: nowrap;
+}
+
+.Section2Image1 {
+    max-width: 100%;
+    max-height: 338px;
+}
+
+.Section2Image2 {
+    max-width: 100%;
+    max-height: 338px;
+    padding: 100px 10px;
+}
+
+@media (max-width: 1200px) {
+    .Section2Image1 {
+        max-width: 200px;
+    }
+
+    .Section2Image2 {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 995px) {
+    .Section2Image1 {
+        max-width: 150px;
+    }
+
+    .Section2Image2 {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 770px) {
+    .Section2Container {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .Section2Left {
+        max-width: 70%;
+        padding: 100px 60px 0 60px;
+    }
+
+    .Section2Right {
+        max-width: 70%;
+    }
+
+    .Section2Image1 {
+        max-height: 338px;
+        max-width: 220px;
+    }
+
+    .Section2Image2 {
+        max-height: 338px;
+        max-width: 220px;
+        padding: 0px 10px 70px 20px;
+    }
+}
+
+@media (max-width: 665px) {
+    .Section2Image1 {
+        max-width: 200px;
+    }
+
+    .Section2Image2 {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 532px) {
+    .Section2Left {
+        max-width: 75%;
+        padding: 0;
+    }
+
+    .Section2Right {
+        max-width: 80%;
+    }
+
+    .Section2Image1 {
+        max-width: 150px;
+    }
+
+    .Section2Image2 {
+        max-width: 150px;
+    }
+}

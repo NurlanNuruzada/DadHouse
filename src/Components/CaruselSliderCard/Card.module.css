@@ -1,0 +1,66 @@
+.MainContainer {
+    min-width: 300px;
+    height: 450px;
+    background-color: #f8f5f0;
+    margin: 10px;
+}
+
+.UpImage {
+    width: 100%;
+}
+
+.Down {
+    padding: 30px;
+}
+
+.CardTitle {
+    line-height: 1;
+    margin: 0;
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.Price {
+    margin: 0;
+    line-height: 1;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #aa8453;
+}
+
+.PriceTag {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: #666;
+}
+
+.Description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    color: #666;
+    padding: 8px 0;
+}
+
+.List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.PriceContainer {
+    padding: 15px 0;
+}
+
+@media (max-width: 1200px) {
+    .MainContainer {
+        min-width: 100px !important;
+    }
+}
+@media (max-width: 665px) {
+    .MainContainer {
+        min-width: 100px !important;
+    }
+}

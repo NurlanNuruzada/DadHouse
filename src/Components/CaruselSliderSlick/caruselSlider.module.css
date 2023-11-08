@@ -1,0 +1,33 @@
+  .SliderConatiner {
+    height: max-content;
+    width: 100%;
+  }
+
+  .SliderConatiner img {
+    height: 200px;
+  }
+
+  .CustomDots {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    .SliderConatiner {
+      width: 400px !important;
+    }
+  }
+
+  @media (max-width: 665px) {
+    .SliderConatiner {
+      max-width: 400px !important;
+    }
+  }
+
+
+  @media (max-width: 451px) {
+    .SliderConatiner {
+      max-width: 350px !important;
+    }
+  }
