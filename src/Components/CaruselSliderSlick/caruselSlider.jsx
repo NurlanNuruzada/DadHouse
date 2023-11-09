@@ -8,6 +8,7 @@ import Image from "../../Images/Service1.jpg";
 import Image2 from "../../Images/Service2.jpg";
 import Image3 from "../../Images/Service3.jpg";
 import Image4 from "../../Images/Service4.jpg";
+import fishingImg from "../../Images/fishing.jpg";
 import CustomDot from "../CustomDots/CutomSliderDot";
 
 const SynchronizedSlider = () => {
@@ -40,7 +41,6 @@ const SynchronizedSlider = () => {
           slidesToShow: 2,
         },
       },
-
     ],
   };
 
@@ -51,11 +51,30 @@ const SynchronizedSlider = () => {
 
   return (
     <div className={Style.SliderConatiner}>
-      <Slider ref={sliderRef} {...settings} className={`${Style.CustomSlider} slick-slider`}>
-        <Card Image={Image} Price={34} Title={"Drinks Included"} />
-        <Card Image={Image2} Price={15} Title={"Room Cleaning"} />
-        <Card Image={Image3} Price={24} Title={"Room Breakfast"} />
-        <Card Image={Image4} Price={24} Title={"Room Breakfast"} />
+      <Slider
+        ref={sliderRef}
+        {...settings}
+        className={`${Style.CustomSlider} slick-slider`}
+      >
+        <Card
+          Image={Image}
+          Price={11}
+          Title={"Breakfast"}
+          PricingType="/per person"
+        />
+        <Card
+          Image={fishingImg}
+          Price={20}
+          Title={"Fishing"}
+          PricingType="/kg"
+        />
+        <Card
+          Image={Image3}
+          Price={150}
+          Title={"Lakeside Pavilion"}
+          PricingType="/daily"
+        />
+        <Card Image={Image4} Price={""} Title={"Room Service"} PricingType="" />
       </Slider>
       <div className={Style.CustomDots}>
         {Array.from({ length: 4 }).map((_, index) => (

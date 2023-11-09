@@ -1,5 +1,5 @@
 import { AiOutlineCar } from "react-icons/ai";
-
+import fishingImg from "../Images/fishing.jpg";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import {
   FaUtensils,
@@ -32,7 +32,7 @@ export const departmentsData = [
       "Restaurant inilla duiman at elit finibus viverra nec a lacus themo the nesudea seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne onen nivami acsestion augue artine.",
   },
   {
-    image: "https://duruthemes.com/demo/html/cappa/demo1-light/img/spa/1.jpg",
+    image: fishingImg,
     type: "EXPERIENCES",
     name: "Fishing",
     about:
