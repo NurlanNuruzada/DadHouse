@@ -2,6 +2,15 @@
 .input-container {
   position: relative;
   margin: 20px;
+
+  &>form {
+
+    &>div {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+    }
+  }
 }
 
 /* Input field */
@@ -40,15 +49,16 @@
 }
 
 /* Input field:focus styles */
-.input-field:focus + .input-label {
+.input-field:focus+.input-label {
   top: -20px;
   font-size: 12px;
   color: #aa8453;
 }
 
-.input-field:focus + .input-label + .input-highlight {
+.input-field:focus+.input-label+.input-highlight {
   width: 100%;
 }
+
 .send-btn {
   line-height: 1.2em;
   font-weight: 400;
@@ -61,7 +71,36 @@
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
 .input-wrapper {
   position: relative;
   margin-bottom: 20px;
+  width: 100% !important;
+
+}
+
+textarea {
+  width: 200px !important;
+}
+
+
+#input-field2 {
+  padding: 0; 
+}
+
+@media(max-width: 576px) {
+  /* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+
+  &>form {
+
+    &>div {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+  }
+}
 }

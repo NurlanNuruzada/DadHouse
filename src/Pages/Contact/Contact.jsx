@@ -8,9 +8,10 @@ import Contact2 from "../../Components/Contact/Contact";
 export default function Contact() {
   return (
     <div>
-      <ParalaxEffect FirstTitle={"GET IN TOUCH"} SeccondTitle={"Contact Us"} Image={Images} />
+      <ParalaxEffect Image={Images} />
       <Contact2 />
       <Background />
     </div>
   )
 }
+// FirstTitle={"GET IN TOUCH"} SeccondTitle={"Contact Us"}

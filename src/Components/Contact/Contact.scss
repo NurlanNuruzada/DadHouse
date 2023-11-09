@@ -25,6 +25,18 @@
     }
 }
 
+@media(max-width: 992px) {
+    .Hotel_Location_desk{
+        max-width: 1150px;
+        height: auto;
+    }
+
+    .responsive_Phone_Location{
+        max-width: 1150px;
+        height: auto;
+        display: none;
+    }
+}
 
 
 @media(max-width: 576px) {
@@ -33,6 +45,8 @@
 
     }
     .responsive_Phone_Location{
+        max-width: 1150px !important;
         display: block !important;
+
     }
 }

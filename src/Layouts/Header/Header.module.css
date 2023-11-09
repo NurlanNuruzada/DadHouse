@@ -10,21 +10,21 @@ li {
 }
 
 .navbar .navbar_links li :hover {
-    color: #aa8453  !important;
+    color: #aa8453 !important;
 }
 
 
 .navbar .navbar_links li a :hover {
-    color: #aa8453  !important;
+    color: #aa8453 !important;
 }
 
 .dropdown_menu li :hover {
-    color: #aa8453  !important;
+    color: #aa8453 !important;
 }
 
 
 .dropdown_menu li a :hover {
-    color: #aa8453  !important;
+    color: #aa8453 !important;
 }
 
 
@@ -78,7 +78,7 @@ li {
     border-radius: 10px;
     overflow: hidden;
     /* transation */
-    
+
 }
 
 .dropdown_menu li {
@@ -102,6 +102,11 @@ li {
 
     .navbar .toggle_btn {
         display: block;
+
+        &>svg {
+            margin-left: -120px !important;
+
+        }
     }
 
     .dropdown_menu {

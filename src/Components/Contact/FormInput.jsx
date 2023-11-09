@@ -32,26 +32,29 @@ const FormInput = (props) => {
     <>
       <div className="input-container">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="input-wrapper">
-            <input type="text" name="user_name" className="input-field" />
-            <label className="input-label">Name*</label>
-            <div className="input-highlight"></div>
-          </div>
-          <div className="input-wrapper">
-            <textarea name="subject" className="input-field"></textarea>
-            <label className="input-label">Subject*</label>
-            <div className="input-highlight"></div>
-          </div>
+          <div>
 
-          <div className="input-wrapper">
-            <input type="email" name="user_email" className="input-field" />
-            <label className="input-label">Email*</label>
-            <div className="input-highlight"></div>
-          </div>
-          <div className="input-wrapper">
-            <textarea name="user_number" className="input-field"></textarea>
-            <label className="input-label">Number*</label>
-            <div className="input-highlight"></div>
+            <div className="input-wrapper">
+              <input type="text" name="user_name" className="input-field" />
+              <label className="input-label">Name*</label>
+              <div id="deskTrasni" className="input-highlight"></div>
+            </div>
+            <div className="input-wrapper">
+              <textarea id="input-field2" name="subject" className="input-field"></textarea>
+              <label className="input-label">Subject*</label>
+              <div className="input-highlight"></div>
+            </div>
+
+            <div className="input-wrapper">
+              <input type="email" name="user_email" className="input-field" />
+              <label className="input-label">Email*</label>
+              <div id="deskTrasni" className="input-highlight"></div>
+            </div>
+            <div className="input-wrapper">
+              <textarea id="input-field2" name="user_number" className="input-field"></textarea>
+              <label className="input-label">Number*</label>
+              <div className="input-highlight"></div>
+            </div>
           </div>
 
           <div className="input-wrapper">

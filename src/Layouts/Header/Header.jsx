@@ -34,10 +34,10 @@ export default function Header() {
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setScrolling(true);
-      setNavbarBackground('white'); 
+      setNavbarBackground('white');
     } else {
       setScrolling(false);
-      setNavbarBackground('transparent'); 
+      setNavbarBackground('transparent');
     }
   };
 
@@ -70,7 +70,6 @@ export default function Header() {
           <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>RESTAURANT</Link></li>
           <li><Link style={scrolling ? { color: "black" } : { color: "white" }} id={Styles.LinkEdit}>CONTACT</Link></li>
         </div>
-
       </div>
     </>
   )
