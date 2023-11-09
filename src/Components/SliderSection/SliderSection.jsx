@@ -7,7 +7,7 @@ export default function SliderSection({ height }) {
   return (
     <div style={{ height: height }} className={Styles.Section3Container}>
       <div className={Styles.LeftSideContainer}>
-        <span className={Styles.Section3Title1}>Best Prices</span>
+        {/* <span className={Styles.Section3Title1}>Best Prices</span> */}
         <br />
         <span className={Styles.Section3Title2}>Extra Service</span>
         <p className={Styles.Section3Description}>

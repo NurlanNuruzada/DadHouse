@@ -14,9 +14,12 @@ export default function Background() {
       <div className={Styles.MainContainer}>
         <div className={Styles.LeftSide}>
           <h1 className={Styles.text}>
-            Each of our guest rooms feature a private bath, Wi-Fi, cable
-            television, and include a full breakfast.
+            Each of our cottages offers a delightful experience, complete with a
+            private bath, Wi-Fi, cable television, and the charm of a fully
+            equipped kitchen, stocked with all the necessary utensils and
+            kitchen equipment.
           </h1>
+
           <div className={Styles.PhoneNumberContainer}>
             <img className={Styles.PhoneIcon} src={PhoneIcon} alt="" />
             <div>
@@ -24,14 +27,14 @@ export default function Background() {
               <p className={Styles.PhoneNumber}>+994 (10) 212 24 24</p>
             </div>
           </div>
-          <div className={Styles.Section3Text}>
+          {/* <div className={Styles.Section3Text}>
             <FontAwesomeIcon
               className={Styles.CheckIcon}
               color="white"
               icon={faCheck}
             />
             <p className={Styles.MiniText}>Call us, it's toll-free.</p>
-          </div>
+          </div> */}
         </div>
         <ChakraProvider>
           <BookingForm />

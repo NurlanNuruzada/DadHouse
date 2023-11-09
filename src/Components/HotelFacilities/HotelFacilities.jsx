@@ -8,8 +8,8 @@ const HotelFacilities = () => {
     <>
       <div className="HotelFacilities_main">
         <div>
-          <h3>OUR SERVICES</h3>
-          <h1>DAD Residence Facilities</h1>
+          <h3>OUR FACILITIES</h3>
+          <h1>Facilities at Your Service</h1>
           <div className="HotelFacilities_in">
             {facilities.map((factil, index) => (
               <Facilities

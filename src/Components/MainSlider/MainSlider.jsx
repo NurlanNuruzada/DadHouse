@@ -9,9 +9,9 @@ import { slides } from "../../Data/Departments";
 const MainSlider = () => {
   useEffect(() => {
     AOS.init({
-      offset: 3000,
-      duration: 5000,
-      delay: 3360,
+      offset: 300,
+      duration: 1000,
+      delay: 500,
     });
     AOS.refresh();
   }, []);
@@ -31,7 +31,7 @@ const MainSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [currentSlide]);

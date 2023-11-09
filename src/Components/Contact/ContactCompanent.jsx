@@ -51,15 +51,16 @@ const ContactCompanent = () => {
           <div className="ContactCompanent_form">
             <h1>Get in touch</h1>
             <div id="responsiveUcun2">
-              {formValue.map((value, index) => (
+              {/* {formValue.map((value, index) => (
                 <FormInput key={index} value={value.value} />
-              ))}
+              ))} */}
+              <FormInput />
             </div>
-            <textarea
+            {/* <textarea
               placeholder="Message*"
               className="ContactCompanent_form_text"
             />
-            <button>SEND MESSAGE</button>
+            <button>SEND MESSAGE</button> */}
           </div>
         </div>
       </div>
