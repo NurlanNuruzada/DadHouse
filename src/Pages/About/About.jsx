@@ -6,6 +6,7 @@ import AboutUsSection from '../../Components/AboutUsSection/AboutUsSection';
 import SliderSection from '../../Components/SliderSection/SliderSection';
 import PolicySection from '../../Components/Policy/PolicySection';
 import HotelFacilities from "../../Components/HotelFacilities/HotelFacilities";
+import image from './../../Images/1.jpg'
 
 export default function About() {
     const { scrollRef } = useSnapCarousel();
@@ -13,7 +14,7 @@ export default function About() {
         <>
             <div className={Styles.MainContainer}>
                 {/* Section 1 */}
-                <ParalaxEffect FirstTitle={"LUXURY HOTEL"} SeccondTitle={"About Us"} />
+                <ParalaxEffect Image={image} FirstTitle={"LUXURY HOTEL"} SeccondTitle={"About Us"} />
                 {/* section 2 */}
                 <AboutUsSection />
                 {/* section 3 */}
